@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BASKETBALL</title>
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head> -->
+<!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet"> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+<style>
+    body{
+    
+        margin: 0px;
+        padding: 0px;
+        background-color: black;
+        background: url(black-and-white-basketball-wallpaper-1680x1050_5.jpg); 
+        background-size: cover;
+        font-family: 'Oswald', sans-serif;
+    }
+    
+    .left{
+        color: aliceblue;
+        display: inline-block;
+        /* border: 2px solid red; */
+        position: absolute;
+        left: 41px;
+        top: 20px;
+    }
+    .left img{
+
+        width: 117px;
+        filter: invert(100%);
+        
+    }
+    .mid{
+        /* border: 2px solid blue; */
+        display: block;
+        width: 35%;
+        margin: 20px auto;
+        
+    }
+    .right{
+        color: aliceblue;
+        display: inline-block;
+        /* border: 2px solid brown; */
+        position: absolute;
+        right: 34px;
+        top: 34px;
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 15px;
+        
+    }
+    .navbar li a{
+
+        color: white;
+        text-decoration: none;
+        padding: 15px;
+       padding-left: 10px;
+        transition: 0.5s ease-in-out;
+    }
+    .navbar li a:hover {
+        text-decoration: underline;
+        color: rgb(255, 162, 0);
+    }
+    .srch{
+        background: transparent;
+        height: 35px;
+        width: 211px;
+        border: 1px solid orange;
+        border-right: none;
+        color: white;
+        font-size: 16px;
+        float:left;
+        padding: 10px;
+        border-top-left-radius: 10px;
+        /* border-bottom-left-radius: 5px; */
+    }
+    .btu{
+        width: 85px;
+        height: 35px;
+        background: orange;
+        border: 2px solid orange;
+        margin-top: 0px;
+        color: white;
+        font-size: 15px;
+        border-bottom-right-radius: 10px;
+        /* border-top-right-radius: 5px; */
+        transition: 0.5s ease-in-out;
+
+    }
+    .btu:hover{
+        text-decoration: underline;
+        color: black;
+    }
+    .btu:focus{
+        outline: none;
+    }
+    .srch:focus{
+        outline: none;
+    }
+    
+    
+    .sc{
+        width: 100%;
+        height: 100%;
+        padding-top: 0%;
+        padding-bottom: 20%;
+        position: relative;
+       
+    }
+    
+    
+    .backgroung-image{
+        border-bottom: 2px solid gray;
+        height: 90vh;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bg-text{
+        border-bottom: 2px solid gray;
+        max-width: 700px;
+        width:100%;
+        margin:  auto;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Russo One', sans-serif;
+        color: white;
+    }
+    @keyframes slideInLeft {
+      from {
+       transform: translateX(-300px);
+      }
+       to {
+       transform: translateX(0);
+       }
+    }
+    .bg-text {
+     animation-name: slideInLeft;
+     animation-duration: 1s; 
+     animation-timing-function: ease;
+     animation-delay: 0s;
+     animation-iteration-count:1;
+     animation-direction:normal ;
+     animation-fill-mode:none;
+
+    }
+    .qq{
+        position: absolute;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        padding-left: 261px;
+        padding-top: 209px; ;
+        font-size: 40px;
+        
+        
+    }
+    @keyframes slideInright {
+      from {
+       transform: translateX(300px);
+      }
+       to {
+       transform: translateX(0);
+       }
+    }
+    .qq {
+     animation-name: slideInright;
+     animation-duration: 1s; 
+     animation-timing-function: ease;
+     animation-delay: 0s;
+     animation-iteration-count:1;
+     animation-direction:normal ;
+     animation-fill-mode:none;
+
+    }
+    .p1{ 
+        border-bottom: 2px solid gray;
+        max-width: 2000px;
+        width: 100%;
+        
+    }  
+  
+
+    
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div>
+        <div class="left">
+            <img src="IMG_408B0D83D603-1.jpeg" alt="error">
+        </div>
+        <!-- mid box for avbar -->
+        <div class="mid">
+            <ul class="navbar">
+                 <li><a href="web1.html" class="active"> Home</a> </li> 
+                 <li><a href="#">Tournaments</a></li>
+                  <li><a href="gallery.html">Gallery</a></li>
+                   <li><a href="login.html">Login</a></li>
+                   <li><a href="contact.html">Contact us</a></li>
+            </ul>
+
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+                <input class="srch" type="search" name="" placeholder="search">
+                <a href="#"><button class="btu">Search</button></a>
+
+        </div>
+    </div>
+    </header>
+    </div>  
+        <div class="bg-text">
+             <center><h1>ENHANCE YOUR SKILLS IN</h1></center> 
+        </div>  
+    <div class="qq">
+        <p class="p1">HARD WORK BEATS TALENT WHEN TALENT DOESN'T WORK HARD</p>
+    </div>
+</body>
+</html>
